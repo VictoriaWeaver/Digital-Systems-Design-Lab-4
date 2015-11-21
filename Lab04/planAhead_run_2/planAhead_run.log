@@ -1,0 +1,147 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source D:/DSDII/Lab04/Lab04/pa.fromNetlist.tcl
+# create_project -name Lab04 -dir "D:/DSDII/Lab04/Lab04/planAhead_run_2" -part xc6slx16csg324-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/DSDII/Lab04/Lab04/Usr_interaction.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/DSDII/Lab04/Lab04} }
+# set_property target_constrs_file "Usr_interaction.ucf" [current_fileset -constrset]
+Adding file 'D:/DSDII/Lab04/Lab04/Usr_interaction.ucf' to fileset 'constrs_1'
+# add_files [list {Usr_interaction.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Usr_interaction.ngc ...
+WARNING:NetListWriters:298 - No output is written to Usr_interaction.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Usr_interaction.edif ...
+ngc2edif: Total memory usage is 79728 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/Lab04.data/cache/Usr_interaction_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/Lab04.data/cache/Usr_interaction_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/DSDII/Lab04/Lab04/Usr_interaction.ucf]
+Finished Parsing UCF File [D:/DSDII/Lab04/Lab04/Usr_interaction.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: c13f6c00
+link_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 620.195 ; gain = 205.148
+set_property package_pin "" [get_ports [list  Clk_in]]
+startgroup
+set_property package_pin B3 [get_ports Qrcd_in]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports Qrcd_in]
+endgroup
+startgroup
+set_property package_pin D9 [get_ports Qrcd_in]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports Qrcd_out]
+endgroup
+startgroup
+set_property package_pin A8 [get_ports Nrcd_in]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports Drcd_out]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports Nrcd_out]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports Drcd_in]
+endgroup
+set_property package_pin "" [get_ports [list  CGn_out]]
+startgroup
+set_property package_pin T17 [get_ports CAn_out]
+endgroup
+startgroup
+set_property package_pin T18 [get_ports CBn_out]
+endgroup
+startgroup
+set_property package_pin U17 [get_ports CCn_out]
+endgroup
+startgroup
+set_property package_pin U18 [get_ports CDn_out]
+endgroup
+startgroup
+set_property package_pin M14 [get_ports CEn_out]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports CFn_out]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports CGn_out]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports Clk_in]
+endgroup
+startgroup
+set_property package_pin T11 [get_ports Amt_error]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports Drop_soda_out]
+endgroup
+startgroup
+set_property package_pin P18 [get_ports hund_anode_out]
+endgroup
+startgroup
+set_property package_pin N16 [get_ports ones_anode_out]
+endgroup
+startgroup
+set_property package_pin N15 [get_ports tens_anode_out]
+endgroup
+set_property package_pin "" [get_ports [list  Reset_n_in]]
+startgroup
+set_property package_pin M8 [get_ports {Soda_price_in[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {Soda_price_in[2]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {Soda_price_in[1]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {Soda_price_in[0]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports unused_anode]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports Soda_req_in]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports Reset_n_in]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Oct 22 10:45:27 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

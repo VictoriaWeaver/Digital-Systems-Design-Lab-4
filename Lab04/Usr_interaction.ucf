@@ -1,0 +1,33 @@
+
+
+NET "Qrcd_out" LOC = R11;
+NET "Nrcd_in" LOC = D9;
+NET "Drcd_out" LOC = N11;
+NET "Nrcd_out" LOC = M11;
+NET "CAn_out" LOC = T17;
+NET "CBn_out" LOC = T18;
+NET "CCn_out" LOC = U17;
+NET "CDn_out" LOC = U18;
+NET "CEn_out" LOC = M14;
+NET "CFn_out" LOC = N14;
+NET "CGn_out" LOC = L14;
+NET "Clk_in" LOC = V10;
+NET "Amt_error" LOC = T11;
+NET "Drop_soda_out" LOC = U16;
+NET "hund_anode_out" LOC = P18;
+NET "ones_anode_out" LOC = N16;
+NET "tens_anode_out" LOC = N15;
+NET "Soda_price_in[3]" LOC = M8;
+NET "Soda_price_in[2]" LOC = V9;
+NET "Soda_price_in[1]" LOC = T9;
+NET "Soda_price_in[0]" LOC = T10;
+NET "unused_anode" LOC = P17;
+NET "Soda_req_in" LOC = C9;
+NET "Reset_n_in" LOC = T5;
+
+
+NET "Drcd_in" LOC = B8;
+
+# PlanAhead Generated physical constraints 
+
+NET "Qrcd_in" LOC = C4;

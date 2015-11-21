@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Oct 22 10:18:42 2015
+# Process ID: 39200
+# Log file: D:/DSDII/Lab04/Lab04/planAhead_run_1/planAhead.log
+# Journal file: D:/DSDII/Lab04/Lab04/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/DSDII/Lab04/Lab04/pa.fromNetlist.tcl

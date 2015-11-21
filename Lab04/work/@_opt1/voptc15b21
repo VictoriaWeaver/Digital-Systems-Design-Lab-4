@@ -1,0 +1,334 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\DSDII\Lab04\Lab04
+T_opt
+VYh7N4iPK9V]ONI>z:Umk]1
+04 7 10 work coin_rx behavioral 1
+=1-0040f4d10259-563512de-387-4410
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.1d;51
+Z3 dD:\DSDII\Lab04\Lab04
+T_opt1
+V806;BbUleFHH67zKJKXfa3
+04 6 8 work usr_tb behavior 1
+=1-0040f4d10259-5635268e-2ff-494c
+R1
+n@_opt1
+R2
+Pbin_bcd
+Z4 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 w1444907944
+R3
+Z10 8../bin_bcd.vhd
+Z11 F../bin_bcd.vhd
+l0
+L15
+VnlBBjnQV70njjL@L77AUJ0
+Z12 OL;C;10.1d;51
+31
+b1
+Z13 !s108 1446323840.416000
+Z14 !s90 -reportprogress|300|-explicit|-93|../bin_bcd.vhd|
+Z15 !s107 ../bin_bcd.vhd|
+Z16 o-explicit -93
+Z17 tExplicit 1
+!s100 >C_Bz8BUdHzY7eF81R9Ez2
+!i10b 1
+Bbody
+Z18 DPx4 work 7 bin_bcd 0 22 nlBBjnQV70njjL@L77AUJ0
+R4
+R5
+R6
+R7
+R8
+l0
+L22
+V9P>EQ4P?[kgFfaiK?9Bzm2
+R12
+31
+R13
+R14
+R15
+R16
+R17
+nbody
+!s100 9JHA:nT:c7X3Wc0OG=BlI2
+!i10b 1
+Ecoin_controller
+Z19 w1446322100
+R4
+R5
+R6
+R7
+R8
+R3
+Z20 8Coin_controller.vhd
+Z21 FCoin_controller.vhd
+l0
+L27
+Vg0gM6=02[zSgagHnQK=O[3
+R12
+31
+Z22 !s108 1446323838.622000
+Z23 !s90 -reportprogress|300|-explicit|-93|Coin_controller.vhd|
+Z24 !s107 Coin_controller.vhd|
+R16
+R17
+!s100 4J@fbz;z4fYVY>KIQ@E4Q3
+!i10b 1
+Abehavioral
+R4
+R5
+R6
+R7
+R8
+DEx4 work 15 coin_controller 0 22 g0gM6=02[zSgagHnQK=O[3
+l57
+L40
+VhP7AXN]BzNK=__^TUC;FT2
+R12
+31
+R22
+R23
+R24
+R16
+R17
+!s100 5E?];RoZkO29Pg6KeEF7D1
+!i10b 1
+Ecoin_rx
+Z25 w1446322112
+R6
+R5
+R7
+R8
+R3
+Z26 8../coin_rx.vhd
+Z27 F../coin_rx.vhd
+l0
+L33
+V4?:_F5cUe0DfH2ADR3bch3
+R12
+31
+Z28 !s108 1446323847.040000
+Z29 !s90 -reportprogress|300|-explicit|-93|../coin_rx.vhd|
+Z30 !s107 ../coin_rx.vhd|
+R16
+R17
+!s100 4`RE;2BV]<1A0F:Fo6FTY3
+!i10b 1
+Abehavioral
+R6
+R5
+R7
+R8
+DEx4 work 7 coin_rx 0 22 4?:_F5cUe0DfH2ADR3bch3
+l63
+L44
+V>@?1hJ=K[6TZAnV5n[9VI1
+R12
+31
+R28
+R29
+R30
+R16
+R17
+!s100 f_jmI=[:GEokE:]DCR4gY0
+!i10b 1
+Eseven_seg_decode
+Z31 w1445520602
+R7
+R8
+R3
+Z32 8../seven_seg_decode.vhd
+Z33 F../seven_seg_decode.vhd
+l0
+L27
+Vc[ocPT<7`MMW0ZIzAdPL91
+R12
+31
+Z34 !s108 1446323823.060000
+Z35 !s90 -reportprogress|300|-explicit|-93|../seven_seg_decode.vhd|
+Z36 !s107 ../seven_seg_decode.vhd|
+R16
+R17
+!s100 5iDCl`9dcIOmT3BWO3<2P3
+!i10b 1
+Abehavioral
+R7
+R8
+DEx4 work 16 seven_seg_decode 0 22 c[ocPT<7`MMW0ZIzAdPL91
+l36
+L32
+V3ISWn4oFX@6edzj648J?b2
+R12
+31
+R34
+R35
+R36
+R16
+R17
+!s100 8HT?7TRRzIjQCTdDDnD5V1
+!i10b 1
+Eseven_seg_disp
+Z37 w1444907950
+R6
+R5
+R7
+R8
+R3
+Z38 8../seven_seg_disp.vhd
+Z39 F../seven_seg_disp.vhd
+l0
+L28
+Vd@XoWD2e`@nNmQ7i8^Eij1
+R12
+31
+Z40 !s108 1446323841.044000
+Z41 !s90 -reportprogress|300|-explicit|-93|../seven_seg_disp.vhd|
+Z42 !s107 ../seven_seg_disp.vhd|
+R16
+R17
+!s100 X^`C^fnkmM=m;4BQ5N3KB1
+!i10b 1
+Abehavioral
+R6
+R5
+R7
+R8
+DEx4 work 14 seven_seg_disp 0 22 d@XoWD2e`@nNmQ7i8^Eij1
+l48
+L41
+Vd^0D2]lj01<0K339J8zSz2
+R12
+31
+R40
+R41
+R42
+R16
+R17
+!s100 nBna`CkeNl]S]WFZKhgPT1
+!i10b 1
+Eusr_interaction
+Z43 w1445519236
+R6
+R5
+R7
+R8
+R3
+Z44 8../Usr_interaction.vhd
+Z45 F../Usr_interaction.vhd
+l0
+L31
+VTS>OZbXS<QalOd5fQjOz]2
+R12
+31
+Z46 !s108 1446323847.540000
+Z47 !s90 -reportprogress|300|-explicit|-93|../Usr_interaction.vhd|
+Z48 !s107 ../Usr_interaction.vhd|
+R16
+R17
+!s100 [i_^Wb6IQP7deNii4c2Z13
+!i10b 1
+Abehavioral
+R6
+R5
+R7
+R8
+DEx4 work 15 usr_interaction 0 22 TS>OZbXS<QalOd5fQjOz]2
+l109
+L58
+Vga2WN?5D^X;lLDOfYWTW30
+R12
+31
+R46
+R47
+R48
+R16
+R17
+!s100 kKU45;kTVzJm1:_Toa:iP3
+!i10b 1
+Eusr_tb
+Z49 w1446323702
+R7
+R8
+R3
+Z50 8Usr_tb.vhd
+Z51 FUsr_tb.vhd
+l0
+L21
+VF:@Z5NUADR=zAc9McbobB1
+R12
+31
+Z52 !s108 1446323848.242000
+Z53 !s90 -reportprogress|300|-explicit|-93|Usr_tb.vhd|
+Z54 !s107 Usr_tb.vhd|
+R16
+R17
+!s100 kZhYkiFC;h>4Tz2@NbYCV3
+!i10b 1
+Abehavior
+R7
+R8
+DEx4 work 6 usr_tb 0 22 F:@Z5NUADR=zAc9McbobB1
+l87
+L24
+VzaN`Cf5:Hh6YV6bJfzbXg3
+R12
+31
+R52
+R53
+R54
+R16
+R17
+!s100 QRlSLja;nj4^GY[2aQTXY3
+!i10b 1
+Evending_machine_controller
+Z55 w1446134414
+R4
+R5
+R6
+R18
+R7
+R8
+R3
+Z56 8Vending_machine_controller.vhd
+Z57 FVending_machine_controller.vhd
+l0
+L27
+Vf0ZB69];MNQ<dPkgHJ`0U2
+R12
+31
+Z58 !s108 1446323846.322000
+Z59 !s90 -reportprogress|300|-explicit|-93|Vending_machine_controller.vhd|
+Z60 !s107 Vending_machine_controller.vhd|
+R16
+R17
+!s100 jnDK<G9RzK4_mGf[dgmjl3
+!i10b 1
+Abehavioral
+R4
+R5
+R6
+R18
+R7
+R8
+DEx4 work 26 vending_machine_controller 0 22 f0ZB69];MNQ<dPkgHJ`0U2
+l74
+L42
+V]X``8Y<zDY@azEabEJ9:e0
+R12
+31
+R58
+R59
+R60
+R16
+R17
+!s100 TWD]VYzQ>WK6`1j:Ul@g92
+!i10b 1

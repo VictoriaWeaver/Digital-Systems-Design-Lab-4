@@ -1,0 +1,4 @@
+vhdl work "../seven_seg_decode.vhd"
+vhdl work "Coin_controller.vhd"
+vhdl work "../bin_bcd.vhd"
+vhdl work "Vending_machine_controller.vhd"

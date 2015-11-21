@@ -1,0 +1,706 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Usr_interaction.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Usr_interaction.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Usr_interaction"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Usr_interaction
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\DSDII\Lab04\seven_seg_decode.vhd" into library work
+Parsing entity <seven_seg_decode>.
+Parsing architecture <Behavioral> of entity <seven_seg_decode>.
+Parsing VHDL file "D:\DSDII\Lab04\Lab04\Coin_controller.vhd" into library work
+Parsing entity <Coin_controller>.
+Parsing architecture <Behavioral> of entity <coin_controller>.
+Parsing VHDL file "D:\DSDII\Lab04\bin_bcd.vhd" into library work
+Parsing package <bin_bcd>.
+Parsing package body <bin_bcd>.
+Parsing VHDL file "D:\DSDII\Lab04\seven_seg_disp.vhd" into library work
+Parsing entity <seven_seg_disp>.
+Parsing architecture <Behavioral> of entity <seven_seg_disp>.
+Parsing VHDL file "D:\DSDII\Lab04\Lab04\Vending_machine_controller.vhd" into library work
+Parsing entity <Vending_machine_controller>.
+Parsing architecture <behavioral> of entity <vending_machine_controller>.
+Parsing VHDL file "D:\DSDII\Lab04\coin_rx.vhd" into library work
+Parsing entity <coin_rx>.
+Parsing architecture <Behavioral> of entity <coin_rx>.
+Parsing VHDL file "D:\DSDII\Lab04\Usr_interaction.vhd" into library work
+Parsing entity <Usr_interaction>.
+Parsing architecture <Behavioral> of entity <usr_interaction>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Usr_interaction> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Vending_machine_controller> (architecture <behavioral>) from library <work>.
+
+Elaborating entity <Coin_controller> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\DSDII\Lab04\Lab04\Coin_controller.vhd" Line 104. Case statement is complete. others clause is never selected
+
+Elaborating entity <seven_seg_decode> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <coin_rx> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\DSDII\Lab04\coin_rx.vhd" Line 163. Case statement is complete. others clause is never selected
+
+Elaborating entity <seven_seg_disp> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Usr_interaction>.
+    Related source file is "D:\DSDII\Lab04\Usr_interaction.vhd".
+    Summary:
+	no macro.
+Unit <Usr_interaction> synthesized.
+
+Synthesizing Unit <Vending_machine_controller>.
+    Related source file is "D:\DSDII\Lab04\Lab04\Vending_machine_controller.vhd".
+    Found 4-bit adder for signal <GND_8_o_GND_8_o_add_1_OUT> created at line 40.
+    Found 4-bit adder for signal <amt_deposit[9]_GND_8_o_add_3_OUT> created at line 40.
+    Found 4-bit adder for signal <amt_deposit[8]_GND_8_o_add_5_OUT> created at line 40.
+    Found 4-bit adder for signal <amt_deposit[7]_GND_8_o_add_7_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_8_o_GND_8_o_add_9_OUT> created at line 43.
+    Found 4-bit adder for signal <amt_deposit[6]_GND_8_o_add_11_OUT> created at line 40.
+    Found 4-bit adder for signal <GND_8_o_GND_8_o_add_13_OUT> created at line 43.
+    Found 4-bit adder for signal <amt_deposit[5]_GND_8_o_add_15_OUT> created at line 40.
+    Found 4-bit adder for signal <amt_deposit[9]_GND_8_o_add_17_OUT> created at line 43.
+    Found 4-bit adder for signal <amt_deposit[4]_GND_8_o_add_19_OUT> created at line 40.
+    Found 4-bit adder for signal <amt_deposit[8]_GND_8_o_add_21_OUT> created at line 43.
+    Found 4-bit adder for signal <n0092> created at line 46.
+    Found 3-bit comparator greater for signal <PWR_8_o_amt_deposit[9]_LessThan_1_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[9]_LessThan_3_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[8]_LessThan_5_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[7]_LessThan_7_o> created at line 39
+    Found 3-bit comparator greater for signal <PWR_8_o_GND_8_o_LessThan_9_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[6]_LessThan_11_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_8_o_GND_8_o_LessThan_13_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[5]_LessThan_15_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[9]_LessThan_17_o> created at line 42
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[4]_LessThan_19_o> created at line 39
+    Found 4-bit comparator greater for signal <GND_8_o_amt_deposit[8]_LessThan_21_o> created at line 42
+    Found 3-bit comparator greater for signal <PWR_8_o_GND_8_o_LessThan_23_o> created at line 45
+    Summary:
+	inferred  12 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+	inferred  47 Multiplexer(s).
+Unit <Vending_machine_controller> synthesized.
+
+Synthesizing Unit <Coin_controller>.
+    Related source file is "D:\DSDII\Lab04\Lab04\Coin_controller.vhd".
+    Found 10-bit register for signal <amt_dep>.
+    Found 2-bit register for signal <state>.
+    Found 1-bit register for signal <amt_err>.
+    Found 1-bit register for signal <drop_s>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset_n (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <amt_dep[9]_GND_9_o_add_11_OUT> created at line 122.
+    Found 10-bit adder for signal <amt_dep[9]_GND_9_o_add_12_OUT> created at line 124.
+    Found 10-bit adder for signal <amt_dep[9]_GND_9_o_add_13_OUT> created at line 126.
+    Found 10-bit subtractor for signal <GND_9_o_GND_9_o_sub_21_OUT<9:0>> created at line 135.
+    Found 10-bit comparator greater for signal <soda_price[3]_INV_19_o> created at line 76
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Coin_controller> synthesized.
+
+Synthesizing Unit <seven_seg_decode>.
+    Related source file is "D:\DSDII\Lab04\seven_seg_decode.vhd".
+    Found 16x7-bit Read Only RAM for signal <seven_seg_out<20:14>>
+    Found 16x7-bit Read Only RAM for signal <seven_seg_out<13:7>>
+    Found 16x7-bit Read Only RAM for signal <seven_seg_out<6:0>>
+    Summary:
+	inferred   3 RAM(s).
+Unit <seven_seg_decode> synthesized.
+
+Synthesizing Unit <coin_rx>.
+    Related source file is "D:\DSDII\Lab04\coin_rx.vhd".
+    Found 1-bit register for signal <Q_received>.
+    Found 1-bit register for signal <D_reg>.
+    Found 1-bit register for signal <D_received>.
+    Found 1-bit register for signal <N_reg>.
+    Found 1-bit register for signal <N_received>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <Qp>.
+    Found 1-bit register for signal <Dp>.
+    Found 1-bit register for signal <Np>.
+    Found 10-bit register for signal <coin_cntr>.
+    Found 1-bit register for signal <Q_reg>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Reset_n_INV_21_o (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <coin_cntr[9]_GND_11_o_add_18_OUT> created at line 181.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <coin_rx> synthesized.
+
+Synthesizing Unit <seven_seg_disp>.
+    Related source file is "D:\DSDII\Lab04\seven_seg_disp.vhd".
+    Found 1-bit register for signal <tens_anode>.
+    Found 1-bit register for signal <hund_anode>.
+    Found 1-bit register for signal <CAn>.
+    Found 1-bit register for signal <CBn>.
+    Found 1-bit register for signal <CCn>.
+    Found 1-bit register for signal <CDn>.
+    Found 1-bit register for signal <CEn>.
+    Found 1-bit register for signal <CFn>.
+    Found 1-bit register for signal <CGn>.
+    Found 19-bit register for signal <counter>.
+    Found 1-bit register for signal <ones_anode>.
+    Found 19-bit adder for signal <counter[18]_GND_12_o_add_10_OUT> created at line 121.
+    Found 4x3-bit Read Only RAM for signal <_n0047>
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_3_o> created at line 66.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_4_o> created at line 66.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_5_o> created at line 66.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_6_o> created at line 66.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_7_o> created at line 66.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_8_o> created at line 66.
+    Found 1-bit 4-to-1 multiplexer for signal <counter[18]_PWR_13_o_Mux_9_o> created at line 66.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <seven_seg_disp> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port Read Only RAM                    : 3
+ 4x3-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 15
+ 10-bit adder                                          : 1
+ 10-bit addsub                                         : 1
+ 19-bit adder                                          : 1
+ 4-bit adder                                           : 12
+# Registers                                            : 22
+ 1-bit register                                        : 18
+ 10-bit register                                       : 2
+ 19-bit register                                       : 1
+ 3-bit register                                        : 1
+# Comparators                                          : 13
+ 10-bit comparator greater                             : 1
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 61
+ 1-bit 2-to-1 multiplexer                              : 50
+ 1-bit 4-to-1 multiplexer                              : 7
+ 10-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Coin_controller>.
+The following registers are absorbed into accumulator <amt_dep>: 1 register on signal <amt_dep>.
+Unit <Coin_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <coin_rx>.
+The following registers are absorbed into counter <coin_cntr>: 1 register on signal <coin_cntr>.
+Unit <coin_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_seg_decode>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seven_seg_out<20:14>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <seven_seg_in<11:8>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seven_seg_out> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seven_seg_out<13:7>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <seven_seg_in<7:4>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seven_seg_out> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seven_seg_out<6:0>> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <seven_seg_in<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seven_seg_out> |          |
+    -----------------------------------------------------------------------
+Unit <seven_seg_decode> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_seg_disp>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3231 - The small RAM <Mram__n0047> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <seven_seg_disp> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port distributed Read Only RAM        : 3
+ 4x3-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 12
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 11
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+# Comparators                                          : 13
+ 10-bit comparator greater                             : 1
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 9
+# Multiplexers                                         : 60
+ 1-bit 2-to-1 multiplexer                              : 50
+ 1-bit 4-to-1 multiplexer                              : 7
+ 10-bit 2-to-1 multiplexer                             : 3
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <instance0_vending_machine_controller/coin_control/FSM_0> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ drop  | 01
+ error | 10
+ hold  | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <instance0_coin_rx/FSM_1> on signal <state[1:3]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 000
+ nickel_detected  | 001
+ nickel_wait      | 010
+ dime_detected    | 011
+ dime_wait        | 100
+ quarter_detected | 101
+ quarter_wait     | 110
+------------------------------
+
+Optimizing unit <Usr_interaction> ...
+
+Optimizing unit <Vending_machine_controller> ...
+
+Optimizing unit <Coin_controller> ...
+
+Optimizing unit <coin_rx> ...
+
+Optimizing unit <seven_seg_disp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Usr_interaction, actual ratio is 2.
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_3 has been replicated 2 time(s)
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_4 has been replicated 3 time(s)
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_5 has been replicated 1 time(s)
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_6 has been replicated 3 time(s)
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_7 has been replicated 2 time(s)
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_8 has been replicated 3 time(s)
+FlipFlop instance0_vending_machine_controller/coin_control/amt_dep_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Usr_interaction.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 251
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 18
+#      LUT2                        : 9
+#      LUT3                        : 17
+#      LUT4                        : 27
+#      LUT5                        : 29
+#      LUT6                        : 62
+#      MUXCY                       : 41
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 81
+#      FD                          : 3
+#      FDC                         : 4
+#      FDCE                        : 26
+#      FDR                         : 41
+#      FDS                         : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 9
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              81  out of  18224     0%  
+ Number of Slice LUTs:                  164  out of   9112     1%  
+    Number used as Logic:               164  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    180
+   Number with an unused Flip Flop:      99  out of    180    55%  
+   Number with an unused LUT:            16  out of    180     8%  
+   Number of fully used LUT-FF pairs:    65  out of    180    36%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk_in                             | BUFGP                  | 81    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 6.576ns (Maximum Frequency: 152.066MHz)
+   Minimum input arrival time before clock: 6.025ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: 4.409ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_in'
+  Clock period: 6.576ns (frequency: 152.066MHz)
+  Total number of paths / destination ports: 7791 / 104
+-------------------------------------------------------------------------
+Delay:               6.576ns (Levels of Logic = 6)
+  Source:            instance0_vending_machine_controller/coin_control/amt_dep_8_1 (FF)
+  Destination:       instance0_seven_seg_disp/CGn (FF)
+  Source Clock:      Clk_in rising
+  Destination Clock: Clk_in rising
+
+  Data Path: instance0_vending_machine_controller/coin_control/amt_dep_8_1 to instance0_seven_seg_disp/CGn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.447   1.028  instance0_vending_machine_controller/coin_control/amt_dep_8_1 (instance0_vending_machine_controller/coin_control/amt_dep_8_1)
+     LUT6:I1->O            3   0.203   0.879  instance0_vending_machine_controller/Mmux_amt_deposit[7]_amt_deposit[7]_MUX_61_o111 (instance0_vending_machine_controller/Mmux_amt_deposit[7]_amt_deposit[7]_MUX_61_o11)
+     LUT6:I3->O            1   0.205   0.684  instance0_vending_machine_controller/Mmux_amt_deposit[5]_amt_deposit[5]_MUX_77_o11_SW0 (N29)
+     LUT6:I4->O           10   0.203   0.857  instance0_vending_machine_controller/Mmux_amt_deposit[5]_amt_deposit[5]_MUX_77_o11 (instance0_vending_machine_controller/Madd_amt_deposit[8]_GND_8_o_add_21_OUT_cy<0>)
+     LUT5:I4->O            7   0.205   0.774  instance0_vending_machine_controller/Mmux_amt_display<8>11 (instance0_vending_machine_controller/amt_display<8>)
+     LUT6:I5->O            1   0.205   0.580  instance0_seven_seg_disp/Mmux_counter[18]_PWR_13_o_Mux_9_o11 (instance0_seven_seg_disp/Mmux_counter[18]_PWR_13_o_Mux_9_o1)
+     LUT5:I4->O            1   0.205   0.000  instance0_seven_seg_disp/Mmux_counter[18]_PWR_13_o_Mux_9_o15 (instance0_seven_seg_disp/counter[18]_PWR_13_o_Mux_9_o)
+     FDS:D                     0.102          instance0_seven_seg_disp/CGn
+    ----------------------------------------
+    Total                      6.576ns (1.775ns logic, 4.801ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_in'
+  Total number of paths / destination ports: 830 / 139
+-------------------------------------------------------------------------
+Offset:              6.025ns (Levels of Logic = 10)
+  Source:            Soda_price_in<3> (PAD)
+  Destination:       instance0_vending_machine_controller/coin_control/amt_err (FF)
+  Destination Clock: Clk_in rising
+
+  Data Path: Soda_price_in<3> to instance0_vending_machine_controller/coin_control/amt_err
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.222   1.210  Soda_price_in_3_IBUF (Soda_price_in_3_IBUF)
+     LUT3:I0->O            3   0.205   0.898  instance0_vending_machine_controller/coin_control/soda_price[3]_X_9_o_wide_mux_19_OUT<10>1 (instance0_vending_machine_controller/coin_control/soda_price[3]_X_9_o_wide_mux_19_OUT<0>)
+     LUT4:I0->O            1   0.203   0.000  instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_lut<0> (instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<0> (instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<1> (instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<2> (instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<3> (instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<3>)
+     MUXCY:CI->O           3   0.213   0.755  instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<4> (instance0_vending_machine_controller/coin_control/Mcompar_soda_price[3]_INV_19_o_cy<4>)
+     LUT4:I2->O            1   0.203   0.580  instance0_vending_machine_controller/coin_control/Mmux_state[1]_amt_err_Mux_27_o11 (instance0_vending_machine_controller/coin_control/state[1]_amt_err_Mux_27_o)
+     LUT3:I2->O            1   0.205   0.000  instance0_vending_machine_controller/coin_control/amt_err_rstpot (instance0_vending_machine_controller/coin_control/amt_err_rstpot)
+     FDC:D                     0.102          instance0_vending_machine_controller/coin_control/amt_err
+    ----------------------------------------
+    Total                      6.025ns (2.582ns logic, 3.443ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_in'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            instance0_vending_machine_controller/coin_control/amt_err (FF)
+  Destination:       Amt_error (PAD)
+  Source Clock:      Clk_in rising
+
+  Data Path: instance0_vending_machine_controller/coin_control/amt_err to Amt_error
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  instance0_vending_machine_controller/coin_control/amt_err (instance0_vending_machine_controller/coin_control/amt_err)
+     OBUF:I->O                 2.571          Amt_error_OBUF (Amt_error)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               4.409ns (Levels of Logic = 2)
+  Source:            Qrcd_in (PAD)
+  Destination:       Qrcd_out (PAD)
+
+  Data Path: Qrcd_in to Qrcd_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  Qrcd_in_IBUF (Qrcd_out_OBUF)
+     OBUF:I->O                 2.571          Qrcd_out_OBUF (Qrcd_out)
+    ----------------------------------------
+    Total                      4.409ns (3.793ns logic, 0.616ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk_in         |    6.576|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.41 secs
+ 
+--> 
+
+Total memory usage is 262252 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

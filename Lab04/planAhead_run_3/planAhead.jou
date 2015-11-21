@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Oct 22 10:52:08 2015
+# Process ID: 37564
+# Log file: D:/DSDII/Lab04/Lab04/planAhead_run_3/planAhead.log
+# Journal file: D:/DSDII/Lab04/Lab04/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/DSDII/Lab04/Lab04/pa.fromNetlist.tcl
+startgroup
+set_property package_pin B8 [get_ports Nrcd_in]
+endgroup
+set_property package_pin "" [get_ports [list  Drcd_in]]
+startgroup
+set_property package_pin C4 [get_ports Nrcd_in]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports Drcd_in]
+endgroup
+save_constraints

@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Oct 31 16:17:39 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Drcd_out" LOCATE = SITE "N11" LEVEL 1;
+COMP "Nrcd_in" LOCATE = SITE "D9" LEVEL 1;
+COMP "CEn_out" LOCATE = SITE "M14" LEVEL 1;
+COMP "CBn_out" LOCATE = SITE "T18" LEVEL 1;
+COMP "unused_anode" LOCATE = SITE "P17" LEVEL 1;
+COMP "ones_anode_out" LOCATE = SITE "N16" LEVEL 1;
+COMP "tens_anode_out" LOCATE = SITE "N15" LEVEL 1;
+COMP "Amt_error" LOCATE = SITE "T11" LEVEL 1;
+COMP "CFn_out" LOCATE = SITE "N14" LEVEL 1;
+COMP "Qrcd_out" LOCATE = SITE "R11" LEVEL 1;
+COMP "CCn_out" LOCATE = SITE "U17" LEVEL 1;
+COMP "Nrcd_out" LOCATE = SITE "M11" LEVEL 1;
+COMP "Drcd_in" LOCATE = SITE "B8" LEVEL 1;
+COMP "Clk_in" LOCATE = SITE "V10" LEVEL 1;
+COMP "CGn_out" LOCATE = SITE "L14" LEVEL 1;
+COMP "Drop_soda_out" LOCATE = SITE "U16" LEVEL 1;
+COMP "Soda_price_in<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Soda_price_in<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Soda_req_in" LOCATE = SITE "C9" LEVEL 1;
+COMP "Soda_price_in<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "CDn_out" LOCATE = SITE "U18" LEVEL 1;
+COMP "hund_anode_out" LOCATE = SITE "P18" LEVEL 1;
+COMP "Soda_price_in<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "CAn_out" LOCATE = SITE "T17" LEVEL 1;
+COMP "Reset_n_in" LOCATE = SITE "T5" LEVEL 1;
+COMP "Qrcd_in" LOCATE = SITE "C4" LEVEL 1;
+SCHEMATIC END;
+

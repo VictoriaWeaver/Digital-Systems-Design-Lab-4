@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\DSDII\Lab04\Lab04
+T_opt
+VYh7N4iPK9V]ONI>z:Umk]1
+04 7 10 work coin_rx behavioral 1
+=1-0040f4d10259-563512de-387-4410
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.1d;51
+Ecoin_rx
+Z1 w1445292356
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dD:\DSDII\Lab04\Lab04
+Z7 8../coin_rx.vhd
+Z8 F../coin_rx.vhd
+l0
+L33
+V4?:_F5cUe0DfH2ADR3bch3
+Z9 OL;C;10.1d;51
+31
+Z10 !s108 1446318812.922000
+Z11 !s90 -reportprogress|300|-explicit|-93|../coin_rx.vhd|
+Z12 !s107 ../coin_rx.vhd|
+Z13 o-explicit -93
+Z14 tExplicit 1
+!s100 4`RE;2BV]<1A0F:Fo6FTY3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 coin_rx 0 22 4?:_F5cUe0DfH2ADR3bch3
+l63
+L44
+V>@?1hJ=K[6TZAnV5n[9VI1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 f_jmI=[:GEokE:]DCR4gY0
+!i10b 1
